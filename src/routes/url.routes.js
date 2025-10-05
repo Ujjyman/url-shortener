@@ -8,3 +8,4 @@ router.get("/api/:shortId/stats", stats);
 router.get("/:shortId", redirect);
 
 export default router;
+

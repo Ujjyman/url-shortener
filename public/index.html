@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>URL Shortener</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 600px; }
+    input, button { padding: 10px; font-size: 16px; width: 100%; }
+    button { background: #007bff; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    .box { margin: 20px 0; }
+    #result { margin-top: 20px; font-size: 18px; }
+    a { color: #007bff; }
+  </style>
+</head>
+<body>
+  <h1>URL Shortener</h1>
+  <p>Paste a long URL below. (Optional: enter a custom slug)</p>
+
+  <div class="box">
+    <input type="text" id="url" placeholder="https://example.com/very/long/url" />
+  </div>
+
+  <div class="box">
+    <input type="text" id="slug" placeholder="Custom slug (optional)" />
+  </div>
+
+  <button id="shorten">Generate Short URL</button>
+
+  <div id="result"></div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

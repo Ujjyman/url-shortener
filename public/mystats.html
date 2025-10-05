@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>📊 My URL Stats</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 600px; }
+    input, button { padding: 10px; font-size: 16px; width: 100%; margin-top: 10px; }
+    button { background: #007bff; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    #stats { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>URL Stats</h1>
+  <p>Enter the slug of your short URL to see its stats:</p>
+
+  <input type="text" id="slug" placeholder="e.g. K8q0l8p" />
+  <button id="check">Check Stats</button>
+
+  <div id="stats"></div>
+
+  <!-- Load JS from a separate file so CSP allows it -->
+  <script src="./mystats.js"></script>
+</body>
+</html>
